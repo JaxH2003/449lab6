@@ -7,9 +7,10 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
-    <div x-data="{name: ['Jack', 'Steven', 'Billy', 'Josh', 'Austin', 'Alex', 'Lauren', 'Kate', 'Max', 'Riley']}">
-        <button @click="alert(name)">Generate Random Name</button>
+    <div x-data="rando">
+       <h1 x-text="name"></h1>
+       <button @click="name = name">Generate Random Name</button>
     </div>
-
+<script src="utilities.js"></script>
 </body>
 </html>
